@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StringHolderSample</string>
+    <string name="app_copyright">Copyright %s %s</string>
+</resources>
