@@ -10,7 +10,7 @@ sealed class StringHolder : Parcelable {
     abstract fun getString(context: Context): String
 
     @Parcelize
-    data class Plain(val value: String) : StringHolder() {
+    data class Plain(private val value: String) : StringHolder() {
         override fun getString(context: Context): String = value
     }
 
