@@ -1,5 +1,5 @@
 # StringHolderSample
-This repository is the sample of [StringHolder](https://github.com/tkhs0604/StringHolderSample/blob/master/app/src/main/java/com/tkhs0604/stringholdersample/StringHolder.kt) class, which allows Activities and Fragments to utilize string without distinguishing string and string resource.
+This repository is the sample of [StringHolder](https://github.com/tkhs0604/StringHolderSample/blob/master/app/src/main/java/com/tkhs0604/stringholdersample/StringHolder.kt) class, which enables Activities and Fragments to utilize string without distinguishing string and string resource.
 
 ## How to Use
 ```kotlin
