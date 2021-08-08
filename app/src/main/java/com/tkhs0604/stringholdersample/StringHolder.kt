@@ -7,13 +7,12 @@ import kotlinx.parcelize.Parcelize
 import kotlinx.parcelize.RawValue
 
 sealed class StringHolder : Parcelable {
-    open fun getString(context: Context): String = when (this) {
-        is Plain -> value
-        is Resource -> getString(context)
-    }
+    abstract fun getString(context: Context): String
 
     @Parcelize
-    data class Plain(val value: String) : StringHolder()
+    data class Plain(val value: String) : StringHolder() {
+        override fun getString(context: Context): String = value
+    }
 
     @Parcelize
     class Resource(
